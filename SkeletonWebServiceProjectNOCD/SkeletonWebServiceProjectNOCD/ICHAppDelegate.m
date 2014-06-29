@@ -8,22 +8,37 @@
 
 #import "ICHAppDelegate.h"
 #import "ICHFirstViewController.h"
+#import "PKRevealController.h"
+#import "ICHSideMenuViewController.h"
+
 
 @implementation ICHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    
-    ICHFirstViewController *firstViewController = [[ICHFirstViewController alloc]initWithNibName:XIB_NAME_FIRST_VIEW bundle:nil];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:firstViewController];
-    
-    self.window.rootViewController = navigationController;
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor blackColor];
     [self.window makeKeyAndVisible];
+    [self setRootViewController];
     return YES;
 }
+
+-(void)setRootViewController
+{
+    ICHSideMenuViewController *sideMenu = [[ICHSideMenuViewController alloc]initWithNibName:@"ICHSideMenuViewController" bundle:nil];
+    
+    ICHFirstViewController *homeVC = [[ICHFirstViewController alloc] initWithNibName:@"ICHFirstViewController" bundle:nil];
+    
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:homeVC];
+    
+    
+    self.revealController = [PKRevealController revealControllerWithFrontViewController:self.navigationController leftViewController:sideMenu rightViewController:homeVC] ;
+    self.revealController.rightViewController = nil;
+    
+    self.window.rootViewController = self.revealController ;
+    
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
