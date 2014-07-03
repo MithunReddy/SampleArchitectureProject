@@ -19,5 +19,21 @@
 #import "FileNameConstants.h"
 #import "FontsAndFrameConstants.h"
 #import "GeneralConstants.h"
+#import "NSString+Custom.h"
+#import "ICHActivityIndicator.h"
+#import "ICHUtility.h"
+#import "ICHAlertView.h"
+
+
+
+
+#define DEBUG_CODE 1
+
+#ifdef DEBUG_CODE
+#define debugLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define debugLog( s, ... )
+#define NSLog(...)
+#endif
 
 #endif

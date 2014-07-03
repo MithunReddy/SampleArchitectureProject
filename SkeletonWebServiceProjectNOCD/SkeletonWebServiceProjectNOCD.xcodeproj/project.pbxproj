@@ -19,6 +19,11 @@
 		F24C8686195FF54B00613340 /* PKRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = F24C867C195FF54B00613340 /* PKRevealController.m */; };
 		F24C868B195FF5C600613340 /* ICHSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F24C8689195FF5C600613340 /* ICHSideMenuViewController.m */; };
 		F24C868C195FF5C600613340 /* ICHSideMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F24C868A195FF5C600613340 /* ICHSideMenuViewController.xib */; };
+		F2592CD719658A1D00372F38 /* ICHPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592CD619658A1D00372F38 /* ICHPerson.m */; };
+		F2592CDA19658A3A00372F38 /* ICHPerson+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592CD919658A3A00372F38 /* ICHPerson+Operations.m */; };
+		F2592CDE19658AB800372F38 /* NSString+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592CDD19658AB800372F38 /* NSString+Custom.m */; };
+		F2592CE61965A6B700372F38 /* ICHActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592CE51965A6B700372F38 /* ICHActivityIndicator.m */; };
+		F2592CEA1965A70C00372F38 /* ICHAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592CE91965A70C00372F38 /* ICHAlertView.m */; };
 		F2D3A45C195DCF4700BAAD76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D3A45B195DCF4700BAAD76 /* Foundation.framework */; };
 		F2D3A45E195DCF4700BAAD76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D3A45D195DCF4700BAAD76 /* CoreGraphics.framework */; };
 		F2D3A460195DCF4700BAAD76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D3A45F195DCF4700BAAD76 /* UIKit.framework */; };
@@ -57,6 +62,8 @@
 		F2D3A4E5195DE7D200BAAD76 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D3A4CC195DE7D200BAAD76 /* UIView+WebCacheOperation.m */; };
 		F2D3A4EE195DEF3B00BAAD76 /* ICHFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D3A4EC195DEF3B00BAAD76 /* ICHFirstViewController.m */; };
 		F2D3A4EF195DEF3B00BAAD76 /* ICHFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2D3A4ED195DEF3B00BAAD76 /* ICHFirstViewController.xib */; };
+		F2D76B1A196553110053BC57 /* ICHBaseAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D76B19196553110053BC57 /* ICHBaseAPIManager.m */; };
+		F2D76B1D196553290053BC57 /* ICHUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F2D76B1C196553290053BC57 /* ICHUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +102,16 @@
 		F24C8688195FF5C600613340 /* ICHSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHSideMenuViewController.h; sourceTree = "<group>"; };
 		F24C8689195FF5C600613340 /* ICHSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHSideMenuViewController.m; sourceTree = "<group>"; };
 		F24C868A195FF5C600613340 /* ICHSideMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICHSideMenuViewController.xib; sourceTree = "<group>"; };
+		F2592CD519658A1D00372F38 /* ICHPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHPerson.h; sourceTree = "<group>"; };
+		F2592CD619658A1D00372F38 /* ICHPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHPerson.m; sourceTree = "<group>"; };
+		F2592CD819658A3A00372F38 /* ICHPerson+Operations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ICHPerson+Operations.h"; sourceTree = "<group>"; };
+		F2592CD919658A3A00372F38 /* ICHPerson+Operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ICHPerson+Operations.m"; sourceTree = "<group>"; };
+		F2592CDC19658AB800372F38 /* NSString+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Custom.h"; sourceTree = "<group>"; };
+		F2592CDD19658AB800372F38 /* NSString+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Custom.m"; sourceTree = "<group>"; };
+		F2592CE41965A6B700372F38 /* ICHActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHActivityIndicator.h; sourceTree = "<group>"; };
+		F2592CE51965A6B700372F38 /* ICHActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHActivityIndicator.m; sourceTree = "<group>"; };
+		F2592CE81965A70C00372F38 /* ICHAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHAlertView.h; sourceTree = "<group>"; };
+		F2592CE91965A70C00372F38 /* ICHAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHAlertView.m; sourceTree = "<group>"; };
 		F2D3A458195DCF4700BAAD76 /* SkeletonWebServiceProjectNOCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkeletonWebServiceProjectNOCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D3A45B195DCF4700BAAD76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F2D3A45D195DCF4700BAAD76 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -169,6 +186,10 @@
 		F2D3A4ED195DEF3B00BAAD76 /* ICHFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICHFirstViewController.xib; sourceTree = "<group>"; };
 		F2D3A4F0195DEFCC00BAAD76 /* FileNameConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileNameConstants.h; sourceTree = "<group>"; };
 		F2D3A4F1195DEFE800BAAD76 /* FontsAndFrameConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontsAndFrameConstants.h; sourceTree = "<group>"; };
+		F2D76B18196553110053BC57 /* ICHBaseAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHBaseAPIManager.h; sourceTree = "<group>"; };
+		F2D76B19196553110053BC57 /* ICHBaseAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHBaseAPIManager.m; sourceTree = "<group>"; };
+		F2D76B1B196553290053BC57 /* ICHUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHUtility.h; sourceTree = "<group>"; };
+		F2D76B1C196553290053BC57 /* ICHUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +323,8 @@
 		F2591203195F1BBB008F47CD /* BaseAPIManager */ = {
 			isa = PBXGroup;
 			children = (
+				F2D76B18196553110053BC57 /* ICHBaseAPIManager.h */,
+				F2D76B19196553110053BC57 /* ICHBaseAPIManager.m */,
 			);
 			path = BaseAPIManager;
 			sourceTree = "<group>";
@@ -309,8 +332,56 @@
 		F2591204195F1BBB008F47CD /* DataFetchers */ = {
 			isa = PBXGroup;
 			children = (
+				F2592CD3196589E900372F38 /* PersonFtecher */,
 			);
 			path = DataFetchers;
+			sourceTree = "<group>";
+		};
+		F2592CD3196589E900372F38 /* PersonFtecher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PersonFtecher;
+			sourceTree = "<group>";
+		};
+		F2592CD419658A0E00372F38 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				F2592CD519658A1D00372F38 /* ICHPerson.h */,
+				F2592CD619658A1D00372F38 /* ICHPerson.m */,
+				F2592CD819658A3A00372F38 /* ICHPerson+Operations.h */,
+				F2592CD919658A3A00372F38 /* ICHPerson+Operations.m */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		F2592CDB19658A7D00372F38 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F2592CE71965A6D900372F38 /* ICHAlertView */,
+				F2592CE31965A6B700372F38 /* ICHActivityIndicator */,
+				F2592CDC19658AB800372F38 /* NSString+Custom.h */,
+				F2592CDD19658AB800372F38 /* NSString+Custom.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F2592CE31965A6B700372F38 /* ICHActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				F2592CE41965A6B700372F38 /* ICHActivityIndicator.h */,
+				F2592CE51965A6B700372F38 /* ICHActivityIndicator.m */,
+			);
+			path = ICHActivityIndicator;
+			sourceTree = "<group>";
+		};
+		F2592CE71965A6D900372F38 /* ICHAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				F2592CE81965A70C00372F38 /* ICHAlertView.h */,
+				F2592CE91965A70C00372F38 /* ICHAlertView.m */,
+			);
+			path = ICHAlertView;
 			sourceTree = "<group>";
 		};
 		F2D3A44F195DCF4700BAAD76 = {
@@ -386,6 +457,7 @@
 		F2D3A48D195DD51C00BAAD76 /* ModelObjects */ = {
 			isa = PBXGroup;
 			children = (
+				F2592CD419658A0E00372F38 /* Person */,
 			);
 			path = ModelObjects;
 			sourceTree = "<group>";
@@ -393,6 +465,9 @@
 		F2D3A48E195DD51C00BAAD76 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F2592CDB19658A7D00372F38 /* Categories */,
+				F2D76B1B196553290053BC57 /* ICHUtility.h */,
+				F2D76B1C196553290053BC57 /* ICHUtility.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -603,6 +678,8 @@
 				F24C8683195FF54B00613340 /* PKLayerAnimator.m in Sources */,
 				F2D3A4DE195DE7D200BAAD76 /* SDWebImagePrefetcher.m in Sources */,
 				F2D3A4D2195DE7D200BAAD76 /* AFURLConnectionOperation.m in Sources */,
+				F2D76B1D196553290053BC57 /* ICHUtility.m in Sources */,
+				F2592CEA1965A70C00372F38 /* ICHAlertView.m in Sources */,
 				F2D3A4D1195DE7D200BAAD76 /* AFSecurityPolicy.m in Sources */,
 				F24C867D195FF54B00613340 /* CAAnimation+PKIdentifier.m in Sources */,
 				F24C8680195FF54B00613340 /* UIViewController+PKRevealController.m in Sources */,
@@ -611,14 +688,18 @@
 				F2D3A4D5195DE7D200BAAD76 /* AFURLSessionManager.m in Sources */,
 				F24C8681195FF54B00613340 /* PKRevealControllerView.m in Sources */,
 				F24C8685195FF54B00613340 /* PKLog.m in Sources */,
+				F2592CDE19658AB800372F38 /* NSString+Custom.m in Sources */,
 				F2D3A4DF195DE7D200BAAD76 /* UIButton+WebCache.m in Sources */,
 				F2D3A4DC195DE7D200BAAD76 /* SDWebImageDownloaderOperation.m in Sources */,
 				F2D3A4D6195DE7D200BAAD76 /* MKAnnotationView+WebCache.m in Sources */,
 				F2D3A4D9195DE7D200BAAD76 /* SDWebImageCompat.m in Sources */,
 				F24C8684195FF54B00613340 /* PKSequentialAnimation.m in Sources */,
 				F2D3A4D4195DE7D200BAAD76 /* AFURLResponseSerialization.m in Sources */,
+				F2592CE61965A6B700372F38 /* ICHActivityIndicator.m in Sources */,
 				F24C8686195FF54B00613340 /* PKRevealController.m in Sources */,
+				F2592CD719658A1D00372F38 /* ICHPerson.m in Sources */,
 				F2D3A4E1195DE7D200BAAD76 /* UIImage+MultiFormat.m in Sources */,
+				F2592CDA19658A3A00372F38 /* ICHPerson+Operations.m in Sources */,
 				F2D3A4EE195DEF3B00BAAD76 /* ICHFirstViewController.m in Sources */,
 				F2D3A4E4195DE7D200BAAD76 /* UIImageView+WebCache.m in Sources */,
 				F24C867E195FF54B00613340 /* CALayer+PKConvenienceAnimations.m in Sources */,
@@ -632,6 +713,7 @@
 				F2D3A4E3195DE7D200BAAD76 /* UIImageView+HighlightedWebCache.m in Sources */,
 				F2D3A4DA195DE7D200BAAD76 /* SDWebImageDecoder.m in Sources */,
 				F2D3A4E2195DE7D200BAAD76 /* UIImage+WebP.m in Sources */,
+				F2D76B1A196553110053BC57 /* ICHBaseAPIManager.m in Sources */,
 				F2D3A4DD195DE7D200BAAD76 /* SDWebImageManager.m in Sources */,
 				F2D3A4D0195DE7D200BAAD76 /* AFNetworkReachabilityManager.m in Sources */,
 				F2D3A46C195DCF4700BAAD76 /* ICHAppDelegate.m in Sources */,

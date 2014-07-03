@@ -27,12 +27,25 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-}
+    
+    }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)buttonTapped:(id)sender {
+    
+    [ICHAlertView showAlertWithTiTle:@"Title" message:@"DFDSFSDF" cancelButtonTitle:@"CANCEL" withCompletionBlock:^(NSInteger index) {
+        
+        debugLog(@"alert index %ld",(long)index);
+        
+    } andCancelBlock:^{
+        
+        debugLog(@"alert cancel");
+        
+    } otherButtonTitles:@[@"Ok"]];
 }
 
 @end
