@@ -23,7 +23,7 @@
 		F2592CDA19658A3A00372F38 /* ICHPerson+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592CD919658A3A00372F38 /* ICHPerson+Operations.m */; };
 		F2592CDE19658AB800372F38 /* NSString+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592CDD19658AB800372F38 /* NSString+Custom.m */; };
 		F2592CE61965A6B700372F38 /* ICHActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592CE51965A6B700372F38 /* ICHActivityIndicator.m */; };
-		F2592CEA1965A70C00372F38 /* ICHAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592CE91965A70C00372F38 /* ICHAlertView.m */; };
+		F2592D331965BFEF00372F38 /* ICHAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592D321965BFEF00372F38 /* ICHAlertView.m */; };
 		F2D3A45C195DCF4700BAAD76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D3A45B195DCF4700BAAD76 /* Foundation.framework */; };
 		F2D3A45E195DCF4700BAAD76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D3A45D195DCF4700BAAD76 /* CoreGraphics.framework */; };
 		F2D3A460195DCF4700BAAD76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D3A45F195DCF4700BAAD76 /* UIKit.framework */; };
@@ -110,8 +110,8 @@
 		F2592CDD19658AB800372F38 /* NSString+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Custom.m"; sourceTree = "<group>"; };
 		F2592CE41965A6B700372F38 /* ICHActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHActivityIndicator.h; sourceTree = "<group>"; };
 		F2592CE51965A6B700372F38 /* ICHActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHActivityIndicator.m; sourceTree = "<group>"; };
-		F2592CE81965A70C00372F38 /* ICHAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHAlertView.h; sourceTree = "<group>"; };
-		F2592CE91965A70C00372F38 /* ICHAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHAlertView.m; sourceTree = "<group>"; };
+		F2592D311965BFEF00372F38 /* ICHAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHAlertView.h; sourceTree = "<group>"; };
+		F2592D321965BFEF00372F38 /* ICHAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHAlertView.m; sourceTree = "<group>"; };
 		F2D3A458195DCF4700BAAD76 /* SkeletonWebServiceProjectNOCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkeletonWebServiceProjectNOCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D3A45B195DCF4700BAAD76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F2D3A45D195DCF4700BAAD76 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -358,7 +358,6 @@
 		F2592CDB19658A7D00372F38 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				F2592CE71965A6D900372F38 /* ICHAlertView */,
 				F2592CE31965A6B700372F38 /* ICHActivityIndicator */,
 				F2592CDC19658AB800372F38 /* NSString+Custom.h */,
 				F2592CDD19658AB800372F38 /* NSString+Custom.m */,
@@ -375,11 +374,11 @@
 			path = ICHActivityIndicator;
 			sourceTree = "<group>";
 		};
-		F2592CE71965A6D900372F38 /* ICHAlertView */ = {
+		F2592D301965BFEF00372F38 /* ICHAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				F2592CE81965A70C00372F38 /* ICHAlertView.h */,
-				F2592CE91965A70C00372F38 /* ICHAlertView.m */,
+				F2592D311965BFEF00372F38 /* ICHAlertView.h */,
+				F2592D321965BFEF00372F38 /* ICHAlertView.m */,
 			);
 			path = ICHAlertView;
 			sourceTree = "<group>";
@@ -475,6 +474,7 @@
 		F2D3A48F195DD51C00BAAD76 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				F2592D301965BFEF00372F38 /* ICHAlertView */,
 				F24C8660195FF54B00613340 /* PKRevealController */,
 				F2D3A497195DE7D200BAAD76 /* AFNetworking */,
 				F2D3A4AB195DE7D200BAAD76 /* SDWebImage */,
@@ -679,7 +679,7 @@
 				F2D3A4DE195DE7D200BAAD76 /* SDWebImagePrefetcher.m in Sources */,
 				F2D3A4D2195DE7D200BAAD76 /* AFURLConnectionOperation.m in Sources */,
 				F2D76B1D196553290053BC57 /* ICHUtility.m in Sources */,
-				F2592CEA1965A70C00372F38 /* ICHAlertView.m in Sources */,
+				F2592D331965BFEF00372F38 /* ICHAlertView.m in Sources */,
 				F2D3A4D1195DE7D200BAAD76 /* AFSecurityPolicy.m in Sources */,
 				F24C867D195FF54B00613340 /* CAAnimation+PKIdentifier.m in Sources */,
 				F24C8680195FF54B00613340 /* UIViewController+PKRevealController.m in Sources */,

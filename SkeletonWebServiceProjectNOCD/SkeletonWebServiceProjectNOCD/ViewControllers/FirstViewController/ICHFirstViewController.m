@@ -37,7 +37,7 @@
 }
 - (IBAction)buttonTapped:(id)sender {
     
-    [ICHAlertView showAlertWithTiTle:@"Title" message:@"DFDSFSDF" cancelButtonTitle:@"CANCEL" withCompletionBlock:^(NSInteger index) {
+    [ICHAlertView showAlertWithTiTle:@"Title" message:@"DFDSFSDF" cancelButtonTitle:@"CANCEL" otherButtonTitles:@[@"Ok"] withCompletionBlock:^(NSInteger index) {
         
         debugLog(@"alert index %ld",(long)index);
         
@@ -45,7 +45,7 @@
         
         debugLog(@"alert cancel");
         
-    } otherButtonTitles:@[@"Ok"]];
+    } ];
 }
 
 @end
