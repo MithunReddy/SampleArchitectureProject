@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2230156196714BB006A7912 /* ICHPersonAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F2230155196714BB006A7912 /* ICHPersonAPIManager.m */; };
+		F223015A1967292A006A7912 /* ICHPersonFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F22301591967292A006A7912 /* ICHPersonFetcher.m */; };
+		F223015E19673A94006A7912 /* ICHObjectPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = F223015D19673A94006A7912 /* ICHObjectPrinter.m */; };
 		F230E2251966B498003BB242 /* ICHActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F230E2241966B498003BB242 /* ICHActivityIndicator.m */; };
 		F24C867D195FF54B00613340 /* CAAnimation+PKIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F24C8663195FF54B00613340 /* CAAnimation+PKIdentifier.m */; };
 		F24C867E195FF54B00613340 /* CALayer+PKConvenienceAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = F24C8665195FF54B00613340 /* CALayer+PKConvenienceAnimations.m */; };
@@ -77,6 +80,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F2230154196714BB006A7912 /* ICHPersonAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHPersonAPIManager.h; sourceTree = "<group>"; };
+		F2230155196714BB006A7912 /* ICHPersonAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHPersonAPIManager.m; sourceTree = "<group>"; };
+		F22301581967292A006A7912 /* ICHPersonFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHPersonFetcher.h; sourceTree = "<group>"; };
+		F22301591967292A006A7912 /* ICHPersonFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHPersonFetcher.m; sourceTree = "<group>"; };
+		F223015C19673A94006A7912 /* ICHObjectPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHObjectPrinter.h; sourceTree = "<group>"; };
+		F223015D19673A94006A7912 /* ICHObjectPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHObjectPrinter.m; sourceTree = "<group>"; };
 		F230E2231966B498003BB242 /* ICHActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHActivityIndicator.h; sourceTree = "<group>"; };
 		F230E2241966B498003BB242 /* ICHActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHActivityIndicator.m; sourceTree = "<group>"; };
 		F24C8662195FF54B00613340 /* CAAnimation+PKIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+PKIdentifier.h"; sourceTree = "<group>"; };
@@ -216,6 +225,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F223015B19673A81006A7912 /* ICHObjectPrinter */ = {
+			isa = PBXGroup;
+			children = (
+				F223015C19673A94006A7912 /* ICHObjectPrinter.h */,
+				F223015D19673A94006A7912 /* ICHObjectPrinter.m */,
+			);
+			path = ICHObjectPrinter;
+			sourceTree = "<group>";
+		};
 		F230E2221966B498003BB242 /* ICHActivityIndicator */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +246,8 @@
 		F230E2261966BB5F003BB242 /* PersonApiManager */ = {
 			isa = PBXGroup;
 			children = (
+				F2230154196714BB006A7912 /* ICHPersonAPIManager.h */,
+				F2230155196714BB006A7912 /* ICHPersonAPIManager.m */,
 			);
 			path = PersonApiManager;
 			sourceTree = "<group>";
@@ -357,6 +377,8 @@
 		F2592CD3196589E900372F38 /* PersonFtecher */ = {
 			isa = PBXGroup;
 			children = (
+				F22301581967292A006A7912 /* ICHPersonFetcher.h */,
+				F22301591967292A006A7912 /* ICHPersonFetcher.m */,
 			);
 			path = PersonFtecher;
 			sourceTree = "<group>";
@@ -482,6 +504,7 @@
 		F2D3A48F195DD51C00BAAD76 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				F223015B19673A81006A7912 /* ICHObjectPrinter */,
 				F2592D301965BFEF00372F38 /* ICHAlertView */,
 				F24C8660195FF54B00613340 /* PKRevealController */,
 				F2D3A497195DE7D200BAAD76 /* AFNetworking */,
@@ -681,6 +704,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F223015E19673A94006A7912 /* ICHObjectPrinter.m in Sources */,
 				F2D3A4E0195DE7D200BAAD76 /* UIImage+GIF.m in Sources */,
 				F2D3A4D3195DE7D200BAAD76 /* AFURLRequestSerialization.m in Sources */,
 				F24C8683195FF54B00613340 /* PKLayerAnimator.m in Sources */,
@@ -717,10 +741,12 @@
 				F2D3A4CF195DE7D200BAAD76 /* AFHTTPSessionManager.m in Sources */,
 				F2D3A4CE195DE7D200BAAD76 /* AFHTTPRequestOperationManager.m in Sources */,
 				F24C867F195FF54B00613340 /* NSObject+PKBlocks.m in Sources */,
+				F2230156196714BB006A7912 /* ICHPersonAPIManager.m in Sources */,
 				F2D3A4DB195DE7D200BAAD76 /* SDWebImageDownloader.m in Sources */,
 				F2D3A4E3195DE7D200BAAD76 /* UIImageView+HighlightedWebCache.m in Sources */,
 				F2D3A4DA195DE7D200BAAD76 /* SDWebImageDecoder.m in Sources */,
 				F2D3A4E2195DE7D200BAAD76 /* UIImage+WebP.m in Sources */,
+				F223015A1967292A006A7912 /* ICHPersonFetcher.m in Sources */,
 				F2D76B1A196553110053BC57 /* ICHBaseAPIManager.m in Sources */,
 				F2D3A4DD195DE7D200BAAD76 /* SDWebImageManager.m in Sources */,
 				F2D3A4D0195DE7D200BAAD76 /* AFNetworkReachabilityManager.m in Sources */,

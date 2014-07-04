@@ -10,4 +10,7 @@
 
 @interface ICHPerson (Operations)
 
++ (ICHPerson *)personWithData:(NSDictionary *)data;
+- (void)updatePersonWithData:(NSDictionary *)data;
+
 @end

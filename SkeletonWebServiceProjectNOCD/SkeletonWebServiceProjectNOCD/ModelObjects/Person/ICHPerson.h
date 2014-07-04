@@ -10,4 +10,8 @@
 
 @interface ICHPerson : NSObject
 
+@property (nonatomic, strong) NSString *personName;
+@property (nonatomic, strong) NSString *personAge;
+@property (nonatomic, strong) NSString *personDescription;
+
 @end

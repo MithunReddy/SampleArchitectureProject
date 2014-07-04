@@ -30,7 +30,7 @@
 
 #pragma mark - Post Request
 
-+ (void) postRequestWithURLString:(NSString *)urlString withParameter:(NSDictionary *)parameters withSuccess:(void(^)(id object))successBlock andFail:(void(^)(NSString *errorMessage))failBlock showIndicator:(BOOL)shouldShowIndicator
++ (void) postRequestWithURLString:(NSString *)urlString withParameter:(NSDictionary *)parameters withSuccess:(void(^)(id object))successBlock andFail:(void(^)(id errorObj))failBlock showIndicator:(BOOL)shouldShowIndicator
 {
     
     if ([self isNetWorkAvailable])
@@ -70,7 +70,7 @@
              [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
              [ICHActivityIndicator stopAnimating];
              
-             failBlock([error localizedDescription]);
+             failBlock(error);
              
          }];
     }
@@ -84,7 +84,7 @@
 
 #pragma mark - Get Request
 
-+ (void) getRequestWithURLString:(NSString *)urlString withParameter:(NSDictionary *)parameters withSuccess:(void(^)(id object))successBlock andFail:(void(^)(NSString *errorMessage))failBlock  showIndicator:(BOOL)shouldShowIndicator
++ (void) getRequestWithURLString:(NSString *)urlString withParameter:(NSDictionary *)parameters withSuccess:(void(^)(id object))successBlock andFail:(void(^)(id errorObj))failBlock  showIndicator:(BOOL)shouldShowIndicator
 {
     
     urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
@@ -131,7 +131,7 @@
              [ICHActivityIndicator stopAnimating];
              if (failBlock)
              {
-                 failBlock([error localizedDescription]);
+                 failBlock(error);
              }
              
          }];
@@ -145,7 +145,7 @@
 
 #pragma mark - File Upload
 
-+ (void) postRequestWithURLString:(NSString *)apiURL withFilePath:(NSURL *)filePathURL name:(NSString *)name withSuccess:(void(^)(id object))successBlock andFail:(void(^)(NSString *errorMessage))failBlock  showIndicator:(BOOL)shouldShowIndicator
++ (void) postRequestWithURLString:(NSString *)apiURL withFilePath:(NSURL *)filePathURL name:(NSString *)name withSuccess:(void(^)(id object))successBlock andFail:(void(^)(id errorObj))failBlock  showIndicator:(BOOL)shouldShowIndicator
 {
     
     if ([self isNetWorkAvailable])
@@ -188,7 +188,7 @@
               failure:^(AFHTTPRequestOperation *operation, NSError *error)
          {
              [ICHActivityIndicator stopAnimating];
-             failBlock(error.localizedDescription);
+             failBlock(error);
          }];
         
     }
@@ -224,14 +224,7 @@
 
 + (BOOL)isNetWorkAvailable
 {
-    BOOL netWorkAvailable = NO;
-
-    if ([[AFNetworkReachabilityManager sharedManager]isReachable])
-    {
-        netWorkAvailable = YES;
-    }
-    
-    return netWorkAvailable;
+    return YES;
 }
 
 

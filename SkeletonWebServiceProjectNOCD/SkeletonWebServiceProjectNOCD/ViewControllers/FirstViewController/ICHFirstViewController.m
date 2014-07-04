@@ -7,6 +7,9 @@
 //
 
 #import "ICHFirstViewController.h"
+#import "ICHPersonFetcher.h"
+#import "ICHPerson.h"
+#import "ICHObjectPrinter.h"
 
 @interface ICHFirstViewController ()
 
@@ -37,15 +40,26 @@
 }
 - (IBAction)buttonTapped:(id)sender {
     
-    [ICHAlertView showAlertWithTiTle:@"Title" message:@"DFDSFSDF" cancelButtonTitle:@"CANCEL" otherButtonTitles:@[@"Ok"] withCompletionBlock:^(NSInteger index) {
+//    [ICHAlertView showAlertWithTiTle:@"Title" message:@"DFDSFSDF" cancelButtonTitle:@"CANCEL" otherButtonTitles:@[@"Ok"] withCompletionBlock:^(NSInteger index) {
+//        
+//        debugLog(@"alert index %ld",(long)index);
+//        
+//    } andCancelBlock:^{
+//        
+//        debugLog(@"alert cancel");
+//        
+//    } ];
+    
+    [ICHPersonFetcher fetchPersonsWithPageID:@"2" withCompletionBlock:^(NSArray *personArray) {
+        for (ICHPerson *person in personArray)
+        {
+            debugLog(@"\nperson obj %@",[ICHObjectPrinter descriptionForObject:person]);
+
+        }
         
-        debugLog(@"alert index %ld",(long)index);
+    } failureBlock:^(id object) {
         
-    } andCancelBlock:^{
-        
-        debugLog(@"alert cancel");
-        
-    } ];
+    } showIndicator:YES];
 }
 
 @end

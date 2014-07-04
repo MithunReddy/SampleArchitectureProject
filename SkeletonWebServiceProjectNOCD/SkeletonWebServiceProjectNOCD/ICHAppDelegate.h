@@ -13,6 +13,6 @@
 @interface ICHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (nonatomic,strong)UINavigationController *navigationController;
-@property (nonatomic,strong)PKRevealController *revealController;
+@property (nonatomic, strong) UINavigationController *navigationController;
+@property (nonatomic, strong) PKRevealController *revealController;
 @end
