@@ -25,12 +25,9 @@
         objc_property_t var = vars[i];
         
         const char* name = property_getName (var);
-        //        const char* typeEncoding = ivar_getTypeEncoding(var);
-        
         
         NSString *keyValueString = [NSString stringWithFormat:@"\nself.%@ = %@",[NSString stringWithUTF8String:name],[objct valueForKey:[NSString stringWithUTF8String:name]]];
         [descriptionString appendString:keyValueString];
-        // do what you wish with the name and type here
     }
     
     free(vars);
