@@ -11,8 +11,7 @@
 @interface ICHActivityIndicator : UIActivityIndicatorView
 
 + (UIActivityIndicatorView *)sharedIndicatorView;
-+ (void)startAnimating:(BOOL)showIndicator
-;
++ (void)startAnimating;
 + (void)stopAnimating;
 
 @end

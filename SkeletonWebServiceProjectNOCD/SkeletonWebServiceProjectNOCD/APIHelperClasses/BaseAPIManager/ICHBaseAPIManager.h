@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface ICHBaseAPIManager : NSObject
-+ (void) postRequestWithURLString:(NSString *)urlString withParameter:(NSDictionary *)dict withSuccess:(void(^)(id object))successBlock andFail:(void(^)(NSString *errorMessage))failBlock ;
++ (void) postRequestWithURLString:(NSString *)urlString withParameter:(NSDictionary *)parameters withSuccess:(void(^)(id object))successBlock andFail:(void(^)(NSString *errorMessage))failBlock showIndicator:(BOOL)shouldShowIndicator;
 
-+ (void) postRequestWithURLString:(NSString *)apiURL withFilePath:(NSURL *)filePathURL withSuccess:(void(^)(id object))successBlock andFail:(void(^)(NSString *errorMessage))failBlock;
-+ (void) getRequestWithURLString:(NSString *)urlString withParameter:(NSDictionary *)dict withSuccess:(void(^)(id object))successBlock andFail:(void(^)(NSString *errorMessage))failBlock needToShowIndicator:(BOOL)showIndicator needToCache:(BOOL)shouldCache;
++ (void) getRequestWithURLString:(NSString *)urlString withParameter:(NSDictionary *)parameters withSuccess:(void(^)(id object))successBlock andFail:(void(^)(NSString *errorMessage))failBlock  showIndicator:(BOOL)shouldShowIndicator;
 
-+ (NSString *)baseURL;
+//For file upload
++ (void) postRequestWithURLString:(NSString *)apiURL withFilePath:(NSURL *)filePathURL name:(NSString *)name withSuccess:(void(^)(id object))successBlock andFail:(void(^)(NSString *errorMessage))failBlock  showIndicator:(BOOL)shouldShowIndicator;
+
 + (BOOL)isNetWorkAvailable;
 
 @end

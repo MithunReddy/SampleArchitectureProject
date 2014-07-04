@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F230E2251966B498003BB242 /* ICHActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F230E2241966B498003BB242 /* ICHActivityIndicator.m */; };
 		F24C867D195FF54B00613340 /* CAAnimation+PKIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F24C8663195FF54B00613340 /* CAAnimation+PKIdentifier.m */; };
 		F24C867E195FF54B00613340 /* CALayer+PKConvenienceAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = F24C8665195FF54B00613340 /* CALayer+PKConvenienceAnimations.m */; };
 		F24C867F195FF54B00613340 /* NSObject+PKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = F24C8667195FF54B00613340 /* NSObject+PKBlocks.m */; };
@@ -22,7 +23,6 @@
 		F2592CD719658A1D00372F38 /* ICHPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592CD619658A1D00372F38 /* ICHPerson.m */; };
 		F2592CDA19658A3A00372F38 /* ICHPerson+Operations.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592CD919658A3A00372F38 /* ICHPerson+Operations.m */; };
 		F2592CDE19658AB800372F38 /* NSString+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592CDD19658AB800372F38 /* NSString+Custom.m */; };
-		F2592CE61965A6B700372F38 /* ICHActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592CE51965A6B700372F38 /* ICHActivityIndicator.m */; };
 		F2592D331965BFEF00372F38 /* ICHAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2592D321965BFEF00372F38 /* ICHAlertView.m */; };
 		F2D3A45C195DCF4700BAAD76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D3A45B195DCF4700BAAD76 /* Foundation.framework */; };
 		F2D3A45E195DCF4700BAAD76 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2D3A45D195DCF4700BAAD76 /* CoreGraphics.framework */; };
@@ -77,6 +77,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F230E2231966B498003BB242 /* ICHActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHActivityIndicator.h; sourceTree = "<group>"; };
+		F230E2241966B498003BB242 /* ICHActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHActivityIndicator.m; sourceTree = "<group>"; };
 		F24C8662195FF54B00613340 /* CAAnimation+PKIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+PKIdentifier.h"; sourceTree = "<group>"; };
 		F24C8663195FF54B00613340 /* CAAnimation+PKIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+PKIdentifier.m"; sourceTree = "<group>"; };
 		F24C8664195FF54B00613340 /* CALayer+PKConvenienceAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+PKConvenienceAnimations.h"; sourceTree = "<group>"; };
@@ -108,8 +110,6 @@
 		F2592CD919658A3A00372F38 /* ICHPerson+Operations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ICHPerson+Operations.m"; sourceTree = "<group>"; };
 		F2592CDC19658AB800372F38 /* NSString+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Custom.h"; sourceTree = "<group>"; };
 		F2592CDD19658AB800372F38 /* NSString+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Custom.m"; sourceTree = "<group>"; };
-		F2592CE41965A6B700372F38 /* ICHActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHActivityIndicator.h; sourceTree = "<group>"; };
-		F2592CE51965A6B700372F38 /* ICHActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHActivityIndicator.m; sourceTree = "<group>"; };
 		F2592D311965BFEF00372F38 /* ICHAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICHAlertView.h; sourceTree = "<group>"; };
 		F2592D321965BFEF00372F38 /* ICHAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICHAlertView.m; sourceTree = "<group>"; };
 		F2D3A458195DCF4700BAAD76 /* SkeletonWebServiceProjectNOCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkeletonWebServiceProjectNOCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +216,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F230E2221966B498003BB242 /* ICHActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				F230E2231966B498003BB242 /* ICHActivityIndicator.h */,
+				F230E2241966B498003BB242 /* ICHActivityIndicator.m */,
+			);
+			path = ICHActivityIndicator;
+			sourceTree = "<group>";
+		};
+		F230E2261966BB5F003BB242 /* PersonApiManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PersonApiManager;
+			sourceTree = "<group>";
+		};
 		F24C8660195FF54B00613340 /* PKRevealController */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +332,7 @@
 		F2591202195F1BBB008F47CD /* APIManagers */ = {
 			isa = PBXGroup;
 			children = (
+				F230E2261966BB5F003BB242 /* PersonApiManager */,
 			);
 			path = APIManagers;
 			sourceTree = "<group>";
@@ -358,20 +375,10 @@
 		F2592CDB19658A7D00372F38 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				F2592CE31965A6B700372F38 /* ICHActivityIndicator */,
 				F2592CDC19658AB800372F38 /* NSString+Custom.h */,
 				F2592CDD19658AB800372F38 /* NSString+Custom.m */,
 			);
 			path = Categories;
-			sourceTree = "<group>";
-		};
-		F2592CE31965A6B700372F38 /* ICHActivityIndicator */ = {
-			isa = PBXGroup;
-			children = (
-				F2592CE41965A6B700372F38 /* ICHActivityIndicator.h */,
-				F2592CE51965A6B700372F38 /* ICHActivityIndicator.m */,
-			);
-			path = ICHActivityIndicator;
 			sourceTree = "<group>";
 		};
 		F2592D301965BFEF00372F38 /* ICHAlertView */ = {
@@ -464,6 +471,7 @@
 		F2D3A48E195DD51C00BAAD76 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F230E2221966B498003BB242 /* ICHActivityIndicator */,
 				F2592CDB19658A7D00372F38 /* Categories */,
 				F2D76B1B196553290053BC57 /* ICHUtility.h */,
 				F2D76B1C196553290053BC57 /* ICHUtility.m */,
@@ -676,6 +684,7 @@
 				F2D3A4E0195DE7D200BAAD76 /* UIImage+GIF.m in Sources */,
 				F2D3A4D3195DE7D200BAAD76 /* AFURLRequestSerialization.m in Sources */,
 				F24C8683195FF54B00613340 /* PKLayerAnimator.m in Sources */,
+				F230E2251966B498003BB242 /* ICHActivityIndicator.m in Sources */,
 				F2D3A4DE195DE7D200BAAD76 /* SDWebImagePrefetcher.m in Sources */,
 				F2D3A4D2195DE7D200BAAD76 /* AFURLConnectionOperation.m in Sources */,
 				F2D76B1D196553290053BC57 /* ICHUtility.m in Sources */,
@@ -695,7 +704,6 @@
 				F2D3A4D9195DE7D200BAAD76 /* SDWebImageCompat.m in Sources */,
 				F24C8684195FF54B00613340 /* PKSequentialAnimation.m in Sources */,
 				F2D3A4D4195DE7D200BAAD76 /* AFURLResponseSerialization.m in Sources */,
-				F2592CE61965A6B700372F38 /* ICHActivityIndicator.m in Sources */,
 				F24C8686195FF54B00613340 /* PKRevealController.m in Sources */,
 				F2592CD719658A1D00372F38 /* ICHPerson.m in Sources */,
 				F2D3A4E1195DE7D200BAAD76 /* UIImage+MultiFormat.m in Sources */,

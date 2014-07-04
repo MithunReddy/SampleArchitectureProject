@@ -31,13 +31,11 @@
     return sharedIndicator;
 }
 
-+ (void)startAnimating:(BOOL)showIndicator
++ (void)startAnimating
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         
-        if(showIndicator)
-        {
-            
+        
             UIActivityIndicatorView *sharedIndicator = [ICHActivityIndicator sharedIndicatorView];
             
             UIWindow *window = [[UIApplication sharedApplication].delegate window];
@@ -47,7 +45,6 @@
             [sharedIndicator startAnimating];
             
             [[UIApplication sharedApplication] beginIgnoringInteractionEvents];
-        }
         
     });
     
