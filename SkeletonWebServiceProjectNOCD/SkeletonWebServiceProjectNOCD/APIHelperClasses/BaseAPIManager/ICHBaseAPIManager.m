@@ -113,7 +113,6 @@
             
              [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
              
-             [ICHActivityIndicator stopAnimating];
              
              debugLog( @"Response %@ ",responseObject);
              
@@ -122,18 +121,20 @@
                  successBlock(responseObject);
              }
              
+             [ICHActivityIndicator stopAnimating];
+
          }
              failure:^(AFHTTPRequestOperation *operation, NSError *error)
          {
              debugLog(@"err %@",error);
              
              [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
-             [ICHActivityIndicator stopAnimating];
              if (failBlock)
              {
                  failBlock(error);
              }
-             
+             [ICHActivityIndicator stopAnimating];
+
          }];
     }
     else
