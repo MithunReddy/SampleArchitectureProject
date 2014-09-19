@@ -103,6 +103,7 @@
         
         [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
         
+        
         if (shouldShowIndicator == YES)
         {
             [ICHActivityIndicator startAnimating];
