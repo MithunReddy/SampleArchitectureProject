@@ -16,7 +16,7 @@
 //##################General###############################
 #pragma mark - General
 
-#define BASE_API_URL @"http://api.ichathan.com/"
+#define BASE_API_URL @"http://api-ichathan.rhcloud.com/api/"
 
 #pragma mark General data field key names in response Dictionary
 
@@ -35,7 +35,7 @@
 //##########################Sample API 1##################
 #pragma mark - SampleAPI
 
-#define API_URL_SAMPLE_API @"sampleapi/sampleresponse.php"
+#define API_URL_SAMPLE_API @"index.php"
 #define API_SAMPLE_API_DATA_KEY_OBJECT_LIST @"array"
 #define API_SAMPLE_API_DATA_KEY_NAME @"name"
 #define API_SAMPLE_API_DATA_KEY_AGE @"age"
